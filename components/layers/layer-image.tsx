@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function LayerImage({ layer }: { layer: Layer }) {
   if (layer.url) {
     return (
-      <div className="w-12 h-12 mx-6 flex items-center justify-center gap-3">
+      <div className="w-12 h-12 flex items-center justify-between gap-3">
         <Image
           className="w-full object-contain h-full rounded-sm"
           alt={layer.name ?? "Unknown image"}
